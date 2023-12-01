@@ -22,7 +22,7 @@ const Product = ({post}) => {
         <p className="w-40 text-gray-400 font-normal text-[10px] text-left"> {post.description.split(" ").slice(0,10).join(" ")+ "..."} </p>
       </div>
       <div className="h-[180px]">
-        <img src={post.image}  className="h-full w-full object-contain"/>
+        <img src={post.image} alt="post" className="h-full w-full object-contain"/>
       </div>
       <div className="flex items-center justify-between w-full mt-5">
         <p className="text-green-600 font-semibold"> ${post.price} </p>
